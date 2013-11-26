@@ -16,7 +16,7 @@ Use vagrant to download and configure everything
   vagrant up
 
 note: you can also checkout using svn, instead of using git
-  svn checkout https://github.com/jocelyn/vagrant_scripts/tree/master/eiffelstudio_ppa/precise64_vbox eiffelstudio_precise64_vbox
+  svn checkout https://github.com/jocelyn/vagrant_scripts/trunk/eiffelstudio_ppa/precise64_vbox eiffelstudio_precise64_vbox
   cd eiffelstudio_precise64_vbox
   vagrant up
   
