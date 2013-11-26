@@ -7,7 +7,7 @@ apt-get install -y libgtk2.0-dev libxtst-dev
 echo "Create new user [eiffel]"
 #sudo useradd eiffel --create-home --shell /bin/bash
 #sudo $( echo "eiffel:eiffel" | chpasswd )
-sudo /usr/sbin/useradd -p `openssl passwd -1 eiffel` eiffel
+sudo /usr/sbin/useradd -p `openssl passwd -1 eiffel` eiffel --create-home --shell /bin/bash
 
 if [ -d /vagrant/ftp/eiffel ];
 then

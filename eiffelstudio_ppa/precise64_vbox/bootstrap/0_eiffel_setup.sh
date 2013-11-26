@@ -3,14 +3,14 @@
 echo "Setup eiffel environment"
 
 echo "Using ppa:eiffelstudio-team/ppa"
-apt-get install python-software-properties
+apt-get install -y python-software-properties
 
 add-apt-repository -y ppa:eiffelstudio-team/ppa 
 apt-get update 
-apt-get install eiffelstudio
+apt-get install -y eiffelstudio
 
 echo "Create new user [eiffel]"
-sudo /usr/sbin/useradd -p `openssl passwd -1 eiffel` eiffel
+sudo /usr/sbin/useradd -p `openssl passwd -1 eiffel` eiffel --create-home --shell /bin/bash
 
 if [ -d /vagrant/bootstrap/eiffel ];
 then
