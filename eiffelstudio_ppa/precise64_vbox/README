@@ -1,0 +1,27 @@
+This vagrant settings is intended to compile EiffelStudio in a Virtual Machine.
+
+It creates an account "eiffel" (password is "eiffel") under /home/eiffel
+with 
+ - Eiffel 13.11 installed in /home/eiffel/Eiffel_default
+ - The source code of EiffelStudio
+ - when logged as Eiffel, the environment is setup to use this Eiffel installation.
+
+
+Howto:
+
+- Install VirtualBox 4.2
+- Install vagrant from http://vagrantup.com/
+
+Use vagrant to download and configure everything
+
+  git clone https://github.com/jocelyn/eiffelstudio_vagrant.git 
+  cd eiffelstudio_vagrant
+  vagrant up
+
+note: you can also checkout using svn, instead of using git
+  svn checkout https://github.com/jocelyn/eiffelstudio_vagrant.git/trunk eiffelstudio_vagrant
+  
+For now, this will configure a linux x64 virtualbox machine, install EiffelStudio 13.11 on it.
+Get Eiffelstudio source code, and compile "ec batch" on it.
+
+
