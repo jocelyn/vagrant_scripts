@@ -15,13 +15,15 @@ Howto:
 
 Use vagrant to download and configure everything
 
-  git clone https://github.com/jocelyn/eiffelstudio_vagrant.git 
-  cd eiffelstudio_vagrant
+  git clone https://github.com/jocelyn/vagrant_scripts/
+  cd eiffel_13_11/precise64_vbox
   vagrant up
 
 note: you can also checkout using svn, instead of using git
-  svn checkout https://github.com/jocelyn/eiffelstudio_vagrant.git/trunk eiffelstudio_vagrant
-  
+  svn checkout https://github.com/jocelyn/vagrant_scripts/trunk/eiffel_13_11/precise64_vbox eiffel_13_11_precise64_vbox
+  cd eiffel_13_11_precise64_vbox
+  vagrant up
+
 For now, this will configure a linux x64 virtualbox machine, install EiffelStudio 13.11 on it.
 Get Eiffelstudio source code, and compile "ec batch" on it.
 
